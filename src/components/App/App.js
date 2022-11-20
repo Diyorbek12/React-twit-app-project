@@ -75,8 +75,7 @@ export default class App extends React.Component {
     if (term.length === 0) {
       return items
     }
-
-   return items.filter((item) => {
+    return items.filter((item) => {
       return item.label.indexOf(term) > -1;
     })
   }
