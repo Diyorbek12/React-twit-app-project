@@ -30,7 +30,7 @@ export default class PostListItem extends React.Component {
     }
         return (
             <li className={classNames}>
-            <span className='app-list-item-label' onClick={onToggleLike}>
+            <span className='app-list-item-label'>
                 {label}
             </span>
             <div className='d-flex justify-content-center align-items-center'>
@@ -42,7 +42,7 @@ export default class PostListItem extends React.Component {
                 onClick={onDelete}>
                     <i className='fa fa-trash' />
                 </button>
-                <i className="fa fa-heart" />
+                <i className="fa fa-heart" onClick={onToggleLike} />
             </div>
             </li>
         )

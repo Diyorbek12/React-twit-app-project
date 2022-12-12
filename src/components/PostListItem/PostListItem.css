@@ -30,12 +30,12 @@
     text-align: center;
     line-height: 35px;
     font-size: 16px;
-    color: red;
-    opacity: 0;
+    color: #aeaeae;
+    cursor: pointer;
 }
 
 .app-list-item.like .fa-heart {
-    opacity: 1;
+    color: red;
 }
 
 .app-list-item.important .btn-star, 
