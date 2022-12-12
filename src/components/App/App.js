@@ -27,7 +27,6 @@ export default class App extends React.Component {
 
   deleteItem(id) {
     this.setState(({data}) => {
-      let i;
       const index = data.findIndex(elem => elem.id === id);
       const newArr = [...data.slice(0, index), ...data.slice(index + 1)]
       return {data: newArr}

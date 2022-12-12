@@ -22,7 +22,6 @@ export default class PostAddForm extends React.Component {
   }
 
     render () {
-        const {onAdd} = this.props
         return (
           <form className='bottom-panel d-flex' onSubmit={this.onSubmit}>
             <input 
